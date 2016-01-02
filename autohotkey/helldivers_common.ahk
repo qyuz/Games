@@ -6,9 +6,10 @@ doSequence(_buttonConst, _sequences) {
 }
 
 _doSequence(_buttonConst, _sequence) {
-	sleepTime := 150
+	sleepTime := 20
+	WinGetTitle, title, A
 
-	if (_sequence != "nothing") {
+	if (_sequence != "nothing" And title = "Helldivers") {
 		Send, {Ctrl down}
 		for index, element in _sequence {
 			Sleep, % sleepTime

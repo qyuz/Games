@@ -1,10 +1,10 @@
 #Include helldivers_common.ahk
 setup()
 
-reinforcement := [right,right,right]
+reinforcement := [up,down,right,left,up]
 dive_bomb := [right,right,right]
 
-sequences[MBUTTON] := nothing
+sequences[MBUTTON] := dive_bomb
 sequences[XBUTTON1] := nothing
 sequences[XBUTTON2] := reinforcement
 return
